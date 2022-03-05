@@ -10,6 +10,7 @@ public class MainClassTest extends MainClass {
 
     @Test
     public void testGetClassNumber() {
-        Assert.assertTrue("Error: getLocalNumber() returns " + this.getLocalNumber() + " which less than 45", this.getClassNumber() > 45);
+        Assert.assertTrue("Error: getClassNumber() returns " + this.getClassNumber() + " which less than 45", this.getClassNumber() > 45);
     }
+
 }
