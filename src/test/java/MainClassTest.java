@@ -13,4 +13,10 @@ public class MainClassTest extends MainClass {
         Assert.assertTrue("Error: getClassNumber() returns " + this.getClassNumber() + " which less than 45", this.getClassNumber() > 45);
     }
 
+    @Test
+    public void testGetClassString() {
+        Assert.assertTrue("Error: getClassString() returns \"" + this.getClassString() + "\" which doesn't contain \"hello\" nor \"Hello\"",
+                this.getClassString().contains("hello") || this.getClassString().contains("Hello"));
+    }
+
 }
